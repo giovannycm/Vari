@@ -1,0 +1,169 @@
+body {
+    background-color: #fff;
+    
+}
+
+.encabezado {
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    line-height: 2.4rem;
+}
+.encabezado span {
+    font-size: 3.8rem;
+    font-family: 'Italianno', cursive;
+    color: #e082a8;
+}
+
+.logo {
+    width: 70%;
+}
+
+video {
+    
+    width: 100%;
+}
+h2 {
+   font-family: 'Lobster', cursive;
+color: #e22424e0;
+}
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color:#0085BA;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+/** NAVEGACION **/
+.navegacion {
+     background-color: #0085BA;
+}
+.navbar-light .navbar-toggler{
+     background-color: #ffffff;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+     color: #ffffff;
+}
+
+.nav-principal {
+     background-image: url(../img/border_horizontal.png),
+                        url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+
+
+.nav-link {
+     /* color: #ffffff; */
+     color: #000;
+     font-size: 1.8rem;
+    transition: all .5s ease-in-out;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Lobster', cursive;
+}
+
+.nav-link:hover {
+     background-color: #ffffff;
+     color: #0085BA;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+  }
+  .dropdown-menu .dropdown-item {
+    color:  #0085BA;
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+    
+  }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .mercados-links {
+    display: grid;
+    grid-gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(4, 200px);
+    
+    /*Alineacion horizontal*/
+    justify-content: center ;
+    /*Alineacion Vertical*/
+    align-content: center ;
+}
+
+.marcas-links {
+    display: grid;
+    grid-gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    background: #fff;
+    /*Alineacion horizontal*/
+    justify-content:center  ;
+    /*Alineacion Vertical*/
+    overflow: hidden;
+    align-content: center ;
+}
+
+.categoria{
+    opacity: 70%;
+}
+.categoria:hover{
+    opacity: 100%;
+}
+
+.video-car{
+    margin-bottom: 580px;
+}
+
+
+.contenido__video{
+    background: #7DD174;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+   }
+   
+   /* Estilos para la etiqueta "video" con la calse (.video)  */
+   .video{
+    position: absolute;
+    max-width: 300%;
+    width: 100%;
+   }
